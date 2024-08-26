@@ -3,26 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>I Love Alexandra</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: #f0f0f0;
-        font-family: Arial, sans-serif;
-      }
-      h1 {
-        font-size: 5rem;
-        color: #e74c3c;
-        text-align: center;
-      }
-    </style>
+    <title>i ❤️ alexandra</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>I ❤️ Alexandra</h1>
+    <div id="app">
+      <h1>i ❤️ alexandra</h1>
+      <nav id="groupNav">
+        <!-- Group navigation will be dynamically added here -->
+        <button id="newGroupBtn">New Group</button>
+      </nav>
+      <div id="bookmarkContainer">
+        <!-- Bookmarks for the selected group will be displayed here -->
+      </div>
+    </div>
+
+    <!-- Modal for adding new group -->
+    <div id="addGroupModal" class="modal">
+      <div class="modal-content">
+        <h2>Add New Group</h2>
+        <input type="text" id="newGroupName" placeholder="Enter group name" />
+        <button id="saveNewGroup">Save</button>
+        <button id="cancelNewGroup">Cancel</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

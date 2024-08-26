@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+#app {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#groupNav {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  overflow-x: auto;
+}
+
+#groupNav button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+#groupNav button.active {
+  background-color: #45a049;
+}
+
+#newGroupBtn {
+  background-color: #2196F3;
+}
+
+/* ... (rest of the styles remain the same) */

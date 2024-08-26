@@ -1,13 +1,17 @@
 {
   "manifest_version": 3,
-  "name": "I Love Alexandra",
-  "version": "1.0",
-  "description": "Displays 'I ❤️ Alexandra' on new tab",
+  "name": "i ❤️ alexandra",
+  "version": "1.2",
+  "description": "Custom bookmark manager",
+  "permissions": ["storage"],
   "chrome_url_overrides": {
     "newtab": "newtab.html"
   },
   "icons": {
     "48": "icon48.png",
     "128": "icon128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
   }
 }
